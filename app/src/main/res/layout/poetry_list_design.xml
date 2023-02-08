@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/layout_design"
+    android:padding="5dp"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/textview_poetName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:minHeight="30dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="Mirza Galib"
+        android:textColor="#e52165"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textview_poetryData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:minHeight="60dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="mohabbat meñ nahīñ hai farq jiine aur marne kā usī ko dekh kar jiite haiñ jis kāfir pe dam nikle "
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textview_poetryDateandtime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|right"
+        android:minHeight="20dp"
+        android:padding="5dp"
+        android:text="10-feb-2023"
+        android:textColor="#e52165"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/update_btn"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/update_btn_design"
+            android:text="Update"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/delete_btn"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/delete_btn_bg_design"
+            android:text="Delete"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF" />
+<!--            android:textColor="#FFF5E4"-->
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
