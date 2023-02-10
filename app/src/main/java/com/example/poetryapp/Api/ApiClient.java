@@ -17,7 +17,7 @@ public class ApiClient {
 
             Gson gson = new GsonBuilder().create();
 
-            RETROFIT = new Retrofit.Builder().baseUrl("http://192.168.10.205/poetry/")
+            RETROFIT = new Retrofit.Builder().baseUrl("http:/192.168.187.205/poetry/")
                     .client(okHttpClient)
                     .addConverterFactory(GsonConverterFactory.create(gson)).build();
 

@@ -51,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
     private  void initialization(){
 
         recyclerView = findViewById(R.id.poetry_recyclerView);
+
         Retrofit retrofit = ApiClient.getclient();
         apiInterface = retrofit.create(ApiInterface.class);
         toolbar = findViewById(R.id.main_toolbar);
@@ -58,7 +59,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private  void setadapter(List<PoetryModel> poetryModels){
-
 
         poetryAdapter = new PoetryAdapter(this,poetryModels);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
